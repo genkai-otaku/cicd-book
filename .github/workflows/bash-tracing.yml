@@ -4,7 +4,9 @@ jobs:
   log:
     runs-on: ubuntu-latest
     steps:
-      - run: |   # Bashのトレーシングオプションを有効化し、実行したコマンドをログ出力
+      - run:
+          | # Bashのトレーシングオプションを有効化し、実行したコマンドをログ出力
           set -x
           date
           hostname
+          ls -la
